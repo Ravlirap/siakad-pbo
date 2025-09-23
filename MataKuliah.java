@@ -5,7 +5,6 @@ public class MataKuliah {
     public String namaKelas;
     public String jadwal;
 
-    // Constructor
     public MataKuliah(String kodeMatkul, String namaMatkul, int SKS, String namaKelas, String jadwal) {
         this.kodeMatkul = kodeMatkul;
         this.namaMatkul = namaMatkul;
