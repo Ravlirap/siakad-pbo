@@ -14,17 +14,14 @@ public class MataKuliahTest {
 
         Scanner input = new Scanner(System.in);
 
-        // Pilih mata kuliah
         System.out.print("Pilih nomor mata kuliah (1-7): ");
         int pilihan = input.nextInt();
         input.nextLine(); // clear buffer enter
 
         if (pilihan >= 1 && pilihan <= daftarMK.length) {
-            // Pilih atribut apa yang mau ditampilkan
             System.out.print("Mau tampilkan apa? (kode/nama/sks/kelas/jadwal/all): ");
             String atribut = input.nextLine();
 
-            // Panggil method show dengan parameter
             daftarMK[pilihan - 1].show(atribut);
         } else {
             System.out.println("Pilihan tidak valid.");
